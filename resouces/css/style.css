@@ -19,6 +19,7 @@ header {
 #google-font{
     padding-right: 3rem;
     margin-right: 2.6rem;
+    display: none;
     
 }
 #google-font span{
@@ -28,7 +29,9 @@ header {
     cursor: pointer;
 }
 #navigation {
-    display: none;
+    padding-right: 3rem;
+    font-size: 1.20rem;
+    font-weight: bolder;
 }
 
 ul {
@@ -40,15 +43,44 @@ ul li {
     list-style: none;
     padding: 1rem 1.2rem;
     margin-right: 0.50rem;
-    background-color: #201f2e;
     cursor: pointer;
 }
 
+
 ul li a {
-    color: #fff;
+    color:#201f2e;
+    
+}
+ul li a:hover {
+    color: grey;
 }
 
 main {
     position: relative;
     top:200px
+}
+
+
+
+
+/*media query*/
+@media only screen and (max-width: 950px){
+    #navigation {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 950px){
+    #google-font {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 520px){
+    #logo {
+        display: none;
+    }
+
 }
