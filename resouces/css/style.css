@@ -16,6 +16,11 @@ header {
     z-index: 1;
 }
 
+#logo{
+   
+}
+
+
 #google-font{
     padding-right: 3rem;
     margin-right: 2.6rem;
@@ -60,6 +65,18 @@ main {
     top:200px
 }
 
+.float {
+    float: right;
+}
+.bio {
+   width: 40%;
+}
+.my-img img {
+    max-width: 10%;
+    border-radius: 100%;
+    
+
+}
 
 
 
