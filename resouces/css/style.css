@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
 }
 
+/*header ruleset*/
 header {
     display: flex;
     justify-content: space-between;
@@ -16,11 +17,23 @@ header {
     z-index: 1;
 }
 
+/*logo ruleset*/
 #logo{
-   
+   background-color: midnightblue;
+   color: #fff;
+   padding: 0 10px 0 10px;
+   text-align: center;
+   border-right: 15px solid orange;
+   border-top-left-radius: 10px;
 }
 
+#logo h4 span {
+    font-size: 1.5rem;
+    color: orange;
+    
+}
 
+/*icons to replace the navigation*/
 #google-font{
     padding-right: 3rem;
     margin-right: 2.6rem;
@@ -33,6 +46,8 @@ header {
     font-size: 2.6rem;
     cursor: pointer;
 }
+
+/*the main navigation*/
 #navigation {
     padding-right: 3rem;
     font-size: 1.20rem;
@@ -60,6 +75,8 @@ ul li a:hover {
     color: grey;
 }
 
+
+/*main section of the page*/
 main {
     position: relative;
     top:200px
@@ -80,7 +97,7 @@ main {
 
 
 
-/*media query*/
+/*media query for the navigation*/
 @media only screen and (max-width: 950px){
     #navigation {
         display: none;
