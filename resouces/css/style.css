@@ -8,11 +8,12 @@ html {
 header {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 150px;
     align-items: center;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
+    box-shadow: 0 10px 10px lightgrey;
     padding-left: 50px;
     z-index: 1;
 }
@@ -51,7 +52,6 @@ header {
 #navigation {
     padding-right: 3rem;
     font-size: 1.20rem;
-    font-weight: bolder;
 }
 
 ul {
@@ -79,20 +79,37 @@ ul li a:hover {
 /*main section of the page*/
 main {
     position: relative;
-    top:200px
+    top:200px;
+    height: 100%;
+    
 }
 
-.float {
-    float: right;
+.me {
+    width: 50%;
+    height: 40%;
+    margin: 0 auto 80px;
+    text-align: center;
+
 }
-.bio {
-   width: 40%;
-}
+
 .my-img img {
-    max-width: 10%;
+    max-width: 30%;
     border-radius: 100%;
     
 
+}
+
+.galary {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    border: 1px solid gray;
+    height: 60%;
+}
+
+.galary div {
+    border: 1px solid;
+    height: 300px;
 }
 
 
@@ -108,11 +125,14 @@ main {
 @media only screen and (max-width: 950px){
     #google-font {
         display: block;
+        padding: 5px;
+        margin-right: 20px;
+        
     }
 
 }
 
-@media only screen and (max-width: 520px){
+@media only screen and (max-width: 540px){
     #logo {
         display: none;
     }
