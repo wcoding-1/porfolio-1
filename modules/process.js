@@ -1,11 +1,18 @@
 
-import { languageData } from "./rawData";
+
 
 function processData(data){
+    const programeArray = [];
+  for(let n in data){
+    programeArray.push(data[n]);
+    // console.log(data[n])
+    
+  }
+  return programeArray
 
 }
 
-processData(languageData);
+
 
 const data = {
     processData,
