@@ -2,18 +2,21 @@
 //the html galary section content in object.
 const languageData = {
     html:{
+        box:'box',
         name:'html',
         src:'./resouces/images/icons8-html-logo-48.png',
         author:'Sir Tim Berners-Lee',
         descreption:['HyperText Markup Language or HTML is used to creating structured content for all websites on the WWW.']
     },
     css:{
+        box:'box',
         name:'css',
         src:'./resouces/images/icons8-css-48.png',
         author:'Håkon Wium Lie',
         descreption:['CSS or Cascading Style Sheets is the language web designers and web developers use to create the look and design of a website.']
     },
     js:{
+        box:'box',
         name:'js',
         src:'./resouces/images/icons8-javascript-48.png',
         author:'Brendan Eich',
@@ -21,12 +24,14 @@ const languageData = {
     },
 
     python:{
+        box:'box',
         name:'python',
         src:'./resouces/images/icons8-python-48.png',
         author:'Guido van Rossum',
         descreption:['Python is one of the most beginner-friendly programming languages out there.If you are new to coding, Python is the perfect for learning the fundamentals of programming.']
     },
     java:{
+        box:'box',
         name:'java',
         src:'./resouces/images/icons8-java-logo-48.png',
         author:' James Gosling',

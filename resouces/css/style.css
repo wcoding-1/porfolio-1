@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    font-family: monospace;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -13,25 +13,34 @@ header {
     height: 150px;
     align-items: center;
     border-bottom: 1px solid;
-    box-shadow: 0 10px 10px lightgrey;
+    box-shadow: 0 3px 1px lightgrey;
     padding-left: 50px;
     z-index: 1;
 }
 
 /*logo ruleset*/
 #logo{
+    width: 20%;
    background-color: midnightblue;
    color: #fff;
+   font-family: sans-serif;
    padding: 0 10px 0 10px;
-   text-align: center;
    border-right: 15px solid orange;
    border-top-left-radius: 10px;
+}
+#logo h4, h5 {
+    font-size: 1rem;
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+
+#logo h4 {
+    text-align: center;
 }
 
 #logo h4 span {
     font-size: 1.5rem;
-    color: orange;
-    
+    color: orange; 
 }
 
 /*icons to replace the navigation*/
@@ -88,8 +97,11 @@ main {
     width: 50%;
     height: 40%;
     margin: 0 auto 80px;
-    text-align: center;
 
+}
+
+.my-img {
+    text-align: center;
 }
 
 .my-img img {
@@ -98,43 +110,71 @@ main {
     
 
 }
-
+/*boxes*/
 .galary {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    border: 1px solid gray;
     height: 60%;
 }
 
+/* #description{
+ padding-bottom: 30px;
+
+} */
+
 .galary div {
     border: 1px solid;
-    height: 300px;
+    height: 335px;
+
+}
+
+footer {
+    background-color: midnightblue;
+    margin-top: 5%;
+    padding: 5%;
+    color:#fff;
+    text-align: center;
 }
 
 
 
 /*media query for the navigation*/
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 900px){
     #navigation {
         display: none;
     }
 
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 900px){
     #google-font {
         display: block;
         padding: 5px;
-        margin-right: 20px;
+        text-align: center;
+        /* margin-right: 20px; */
         
     }
 
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 900px){
     #logo {
         display: none;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    .galary {
+        display: flex ;
+        flex-direction: column;
+
+    }
+
+    .galary div {
+        height: 200px;
+    
     }
 
 }

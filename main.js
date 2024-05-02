@@ -36,14 +36,14 @@ renderNav(navs);
 
 
 
-//function for creating and rendering the galary tags.
+//function for creating and rendering the galary/boxes tags.
 const renderGalary = (data)=>{
     const galary = document.querySelector('.galary')
 
 for(let i = 0; i < data.length; i++){
     let divBox = document.createElement('div');
-    divBox.setAttribute('id', data[i].name)
-    divBox.style.textAlign = 'center';
+    divBox.setAttribute('id', data[i].box)
+    // divBox.style.textAlign = 'center';
     divBox.style.padding = '10px';
     let imgTag = document.createElement('img');
     imgTag.setAttribute('src', data[i].src);
@@ -57,6 +57,7 @@ for(let i = 0; i < data.length; i++){
 
     //create element for language descreption.
     let paragraph = document.createElement('p');
+    paragraph.id='description';
     paragraph.textContent = data[i].descreption
     divBox.append(paragraph)
 
